@@ -36,7 +36,7 @@ for option, arg in options:
 
 unicorn.set_layout(unicorn.AUTO)
 unicorn.rotation(0)
-unicorn.brightness(0.5)
+unicorn.brightness(1)
 width,height=unicorn.get_shape()
 
 for y in range(height):

@@ -45,7 +45,7 @@ while True:
     if new_color != current_color:
         unicorn.set_layout(unicorn.AUTO)
         unicorn.rotation(0)
-        unicorn.brightness(0.5)
+        unicorn.brightness(0.4 if new_color == sleeping else 1)
         width,height=unicorn.get_shape()
         red_value, green_value, blue_value = new_color
         for y in range(height):
