@@ -44,6 +44,6 @@ for y in range(height):
     unicorn.set_pixel(x, y, red_value, green_value, blue_value)
 
 unicorn.show()
-    #time.sleep(0.05)
 
-time.sleep(5)
+while True:
+    time.sleep(1)

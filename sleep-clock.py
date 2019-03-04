@@ -5,10 +5,10 @@ import time
 import unicornhat as unicorn
 import colorconstants
 
-early_warning = colorconstants.colors["yellow1"]
+early_warning = colorconstants.colors["goldenrod1"]
 late_warning = colorconstants.colors["orange"]
 sleeping = colorconstants.colors["red1"]
-awake = colorconstants.colors["green"]
+awake = colorconstants.colors["green1"]
 awake_warning = colorconstants.colors["blue"]
 normal = colorconstants.colors["black"]
 current_color = normal
@@ -24,9 +24,9 @@ while True:
     early_warning_start = datetime.time(19, 30)
     late_warning_start = datetime.time(19, 50)
     sleeping_start = datetime.time(20, 0)
-    awake_start = datetime.time(6, 45) if use_alt == False else datetime.time(8,00)
-    awake_warning_start = datetime.time(7, 15) if use_alt == False else datetime.time(8,45)
-    awake_normal_start = datetime.time(8, 30) if use_alt == False else datetime.time(9,00)
+    awake_start = datetime.time(6, 45) if use_alt == False else datetime.time(8, 00)
+    awake_warning_start = datetime.time(7, 15) if use_alt == False else datetime.time(8, 45)
+    awake_normal_start = datetime.time(8, 00) if use_alt == False else datetime.time(9, 00)
     new_color = current_color
     now_time = datetime.datetime.now()
     current_time = datetime.time(now_time.hour, now_time.minute)
