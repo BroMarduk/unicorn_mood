@@ -24,7 +24,7 @@ while True:
     early_warning_start = datetime.time(19, 30)
     late_warning_start = datetime.time(19, 50)
     sleeping_start = datetime.time(20, 0)
-    awake_start = datetime.time(6, 45) if use_alt == False else datetime.time(8, 00)
+    awake_start = datetime.time(6, 30) if use_alt == False else datetime.time(8, 00)
     awake_warning_start = datetime.time(7, 15) if use_alt == False else datetime.time(8, 45)
     awake_normal_start = datetime.time(8, 00) if use_alt == False else datetime.time(9, 00)
     new_color = current_color
